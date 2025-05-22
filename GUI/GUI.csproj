@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Account.Designer.cs">
+      <DependentUpon>GUI_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Book.Designer.cs">
+      <DependentUpon>GUI_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_BookCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_BookCategory.Designer.cs">
+      <DependentUpon>GUI_BookCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Customer.Designer.cs">
+      <DependentUpon>GUI_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_LogIn.Designer.cs">
+      <DependentUpon>GUI_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main.Designer.cs">
+      <DependentUpon>GUI_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Employee.Designer.cs">
+      <DependentUpon>GUI_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Order.Designer.cs">
+      <DependentUpon>GUI_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_OrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_OrderDetail.Designer.cs">
+      <DependentUpon>GUI_OrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_OrderRepot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_OrderRepot.Designer.cs">
+      <DependentUpon>GUI_OrderRepot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Purchase.Designer.cs">
+      <DependentUpon>GUI_Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_PurchaseDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_PurchaseDetail.Designer.cs">
+      <DependentUpon>GUI_PurchaseDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Supplier.Designer.cs">
+      <DependentUpon>GUI_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ds_Order.cs">
+      <DependentUpon>ds_Order.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds_Order.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_Order.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rptOrder.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOrder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI_Account.resx">
+      <DependentUpon>GUI_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Book.resx">
+      <DependentUpon>GUI_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_BookCategory.resx">
+      <DependentUpon>GUI_BookCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Customer.resx">
+      <DependentUpon>GUI_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LogIn.resx">
+      <DependentUpon>GUI_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main.resx">
+      <DependentUpon>GUI_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Employee.resx">
+      <DependentUpon>GUI_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Order.resx">
+      <DependentUpon>GUI_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_OrderDetail.resx">
+      <DependentUpon>GUI_OrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_OrderRepot.resx">
+      <DependentUpon>GUI_OrderRepot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Purchase.resx">
+      <DependentUpon>GUI_Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_PurchaseDetail.resx">
+      <DependentUpon>GUI_PurchaseDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Supplier.resx">
+      <DependentUpon>GUI_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptOrder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOrder.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ds_Order.xsc">
+      <DependentUpon>ds_Order.xsd</DependentUpon>
+    </None>
+    <None Include="ds_Order.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_Order.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds_Order.xss">
+      <DependentUpon>ds_Order.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{cc58654b-2b5f-4bcc-95fe-ff8a5a576301}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{e9568f25-0d19-42e4-884f-920eb0caabe0}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Images\analytics.png" />
+    <Content Include="Resources\Images\back_9604116.png" />
+    <Content Include="Resources\Images\Banner.png" />
+    <Content Include="Resources\Images\book.png" />
+    <Content Include="Resources\Images\bookCategories.png" />
+    <Content Include="Resources\Images\bookCategory.png" />
+    <Content Include="Resources\Images\client_6009897.png" />
+    <Content Include="Resources\Images\exit.png" />
+    <Content Include="Resources\Images\list.png" />
+    <Content Include="Resources\Images\LoggedInUse.png" />
+    <Content Include="Resources\Images\logo.png" />
+    <Content Include="Resources\Images\logo_light.png" />
+    <Content Include="Resources\Images\menu.png" />
+    <Content Include="Resources\Images\minimize.png" />
+    <Content Include="Resources\Images\minimize_3583351.png" />
+    <Content Include="Resources\Images\people_13916337.png" />
+    <Content Include="Resources\Images\pin-code_2186022.png" />
+    <Content Include="Resources\Images\profile_12591613.png" />
+    <Content Include="Resources\Images\purchase.png" />
+    <Content Include="Resources\Images\sell.png" />
+    <Content Include="Resources\Images\selling.png" />
+    <Content Include="Resources\Images\staff.png" />
+    <Content Include="Resources\Images\supplier.png" />
+    <Content Include="Resources\Images\unLoggedInUser.png" />
+    <Content Include="Resources\Images\x-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

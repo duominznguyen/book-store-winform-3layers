@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Entities;
+
+namespace DAL
+{
+    public class DAL_Order : DbConnect
+    {
+        public DAL_Order() : base() { }
+
+        public DataTable GetAllOrder()
+        {
+            string query = "SELECT * FROM Orders";
+            return ExecuteQuery(query);
+        }
+
+        public DataTable GetOrderById(int orderId)
+        {
+            string query = $"SELECT * FROM Orders WHERE OrderID = {orderId}";
+            return ExecuteQuery(query);
+        }
+
+        public DataTable GetOrderByEmployeeId(int employeeId)
+        {
+            string query = $"SELECT * FROM Orders WHERE EmployeeID = {employeeId}";
+            return ExecuteQuery(query);
+        }
+
+        public DataTable GetOrderByCustomerId(int customerId)
+        {
+            string query = $"SELECT * FROM Orders WHERE CustomerID = {customerId}";
+            return ExecuteQuery(query);
+        }
+
+        public DataTable GetOrderByOrderDate(DateTime orderDate)
+        {
+            string query = $"SELECT * FROM Orders WHERE OrderDate = '{orderDate.ToString("yyyy-MM-dd")}'";
+            return ExecuteQuery(query);
+        }
+
+        public bool AddOrder(Order order)
+        {
+            string query = $"INSERT INTO Orders (OrderID, OrderDate, EmployeeID, CustomerID) VALUES ({order.OrderID}, '{order.OrderDate.ToString("yyyy-MM-dd")}', {order.EmployeeID}, {order.CustomerID})";
+            return ExecuteNonQuery(query) > 0;
+        }
+
+        public bool UpdateOrder(Order order)
+        {
+            string query = $"UPDATE Orders SET OrderDate = '{order.OrderDate.ToString("yyyy-MM-dd")}', EmployeeID = {order.EmployeeID}, CustomerID = {order.CustomerID} WHERE OrderID = {order.OrderID}";
+            return ExecuteNonQuery(query) > 0;
+        }
+
+        public bool DeleteOrder(int orderId)
+        {
+            string query = $"DELETE FROM Orders WHERE OrderID = {orderId}";
+            return ExecuteNonQuery(query) > 0;
+        }
+
+
+    }
+}
