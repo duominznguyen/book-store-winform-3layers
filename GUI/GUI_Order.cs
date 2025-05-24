@@ -335,6 +335,13 @@ namespace GUI
             }
 
             int orderId = int.Parse(txt_MaDH.Text);
+
+            if (_bllOrder.GetOrderById(orderId).Rows.Count == 0)
+            {
+                MessageBox.Show("Đơn hàng không tồn tại.");
+                return;
+            }
+
             GUI_OrderDetail gUI_OrderDetail = new GUI_OrderDetail(orderId);
             gUI_OrderDetail.ShowDialog();
 

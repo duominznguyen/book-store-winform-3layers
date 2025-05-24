@@ -17,18 +17,18 @@ namespace GUI
     {
         private BLL_PurchaseDetail _bllPurchaseDetail;
         private BLL_Book _bllBook;
-        private int purchaseID;
+        private int _purchaseID;
         public GUI_PurchaseDetail(int purchaseID)
         {
             InitializeComponent();
             _bllPurchaseDetail = new BLL_PurchaseDetail();
             _bllBook = new BLL_Book();
-            this.purchaseID = purchaseID;
+            this._purchaseID = purchaseID;
         }
 
         private void GUI_PurchaseDetail_Load(object sender, EventArgs e)
         {
-            txt_PurchaseID.Text = purchaseID.ToString();
+            txt_PurchaseID.Text = _purchaseID.ToString();
             LoadPurchaseDetailsDataGridView();
             LoadBooksDataGridView();
             LoadSearchOptionsConboBox();
@@ -38,7 +38,7 @@ namespace GUI
         {
             try
             {
-                DataTable data = _bllPurchaseDetail.GetPurchaseDetailsByPurchaseId(purchaseID);
+                DataTable data = _bllPurchaseDetail.GetPurchaseDetailsByPurchaseId(_purchaseID);
                 dgv_PurchaseDetails.DataSource = data;
                 dgv_PurchaseDetails.Columns["PurchaseDetailID"].Visible = false;
                 dgv_PurchaseDetails.Columns["PurchaseID"].Visible = false;
@@ -216,7 +216,7 @@ namespace GUI
                 {
                     PurchaseDetail purchaseDetail = new PurchaseDetail
                     {
-                        PurchaseID = purchaseID,
+                        PurchaseID = _purchaseID,
                         BookID = int.Parse(txt_BookID.Text),
                         Quantity = int.Parse(txt_PurchaseQuantity.Text),
                         PurchasePrice = decimal.Parse(txt_PurchasePrice.Text)
@@ -489,6 +489,27 @@ namespace GUI
             else
             {
                 MessageBox.Show("Vui lòng chọn một hành động.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btn_PrintReport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable data = _bllPurchaseDetail.GetPurchaseReportData(_purchaseID);
+
+                rpt_Purchase rpt_Purchase = new rpt_Purchase();
+                rpt_Purchase.SetDataSource(data);
+
+                GUI_Report report = new GUI_Report();
+                report.crv_Report.ReportSource = rpt_Purchase;
+                report.crv_Report.Refresh();
+                report.ShowDialog();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi in báo cáo: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

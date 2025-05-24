@@ -54,7 +54,7 @@
             this.txt_PurchaseDetailID = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_PurchaseID = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_PrintReport = new System.Windows.Forms.Button();
             this.dgv_PurchaseDetails = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Books)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -301,7 +301,7 @@
             this.groupBox2.Controls.Add(this.txt_PurchaseDetailID);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txt_PurchaseID);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btn_PrintReport);
             this.groupBox2.Controls.Add(this.dgv_PurchaseDetails);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 195);
@@ -351,15 +351,16 @@
             this.txt_PurchaseID.Size = new System.Drawing.Size(237, 35);
             this.txt_PurchaseID.TabIndex = 29;
             // 
-            // button1
+            // btn_PrintReport
             // 
-            this.button1.Location = new System.Drawing.Point(728, 977);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 63);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "In hóa đơn";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_PrintReport.Location = new System.Drawing.Point(728, 977);
+            this.btn_PrintReport.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.btn_PrintReport.Name = "btn_PrintReport";
+            this.btn_PrintReport.Size = new System.Drawing.Size(227, 63);
+            this.btn_PrintReport.TabIndex = 19;
+            this.btn_PrintReport.Text = "In hóa đơn";
+            this.btn_PrintReport.UseVisualStyleBackColor = true;
+            this.btn_PrintReport.Click += new System.EventHandler(this.btn_PrintReport_Click);
             // 
             // dgv_PurchaseDetails
             // 
@@ -430,7 +431,7 @@
         private System.Windows.Forms.TextBox txt_PurchaseDetailID;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txt_PurchaseID;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_PrintReport;
         private System.Windows.Forms.DataGridView dgv_PurchaseDetails;
         private System.Windows.Forms.TextBox txt_SearchValue;
         private System.Windows.Forms.Label label7;

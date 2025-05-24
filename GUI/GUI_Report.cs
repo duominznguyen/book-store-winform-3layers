@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class GUI_OrderRepot : Form
+    public partial class GUI_Report : Form
     {
-        public GUI_OrderRepot()
+        public GUI_Report()
         {
             InitializeComponent();
-        }
-
-        private void crv_Order_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

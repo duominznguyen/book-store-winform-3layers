@@ -123,12 +123,6 @@
     <Compile Include="GUI_OrderDetail.Designer.cs">
       <DependentUpon>GUI_OrderDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_OrderRepot.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI_OrderRepot.Designer.cs">
-      <DependentUpon>GUI_OrderRepot.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI_Purchase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +134,12 @@
     </Compile>
     <Compile Include="GUI_PurchaseDetail.Designer.cs">
       <DependentUpon>GUI_PurchaseDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Report.Designer.cs">
+      <DependentUpon>GUI_Report.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_Supplier.cs">
       <SubType>Form</SubType>
@@ -153,6 +153,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rpt_Order.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Purchase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Purchase.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="GUI_Account.resx">
@@ -182,14 +188,14 @@
     <EmbeddedResource Include="GUI_OrderDetail.resx">
       <DependentUpon>GUI_OrderDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI_OrderRepot.resx">
-      <DependentUpon>GUI_OrderRepot.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI_Purchase.resx">
       <DependentUpon>GUI_Purchase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_PurchaseDetail.resx">
       <DependentUpon>GUI_PurchaseDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Report.resx">
+      <DependentUpon>GUI_Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Supplier.resx">
       <DependentUpon>GUI_Supplier.cs</DependentUpon>
@@ -202,6 +208,10 @@
     <EmbeddedResource Include="rpt_Order.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_Order.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Purchase.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Purchase.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ds_Report.xsc">
       <DependentUpon>ds_Report.xsd</DependentUpon>

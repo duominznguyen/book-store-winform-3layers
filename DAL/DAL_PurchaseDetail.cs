@@ -87,5 +87,19 @@ namespace DAL
                 return new Result(false, "Lỗi khi xóa chi tiết đơn hàng: " + ex.Message);
             }
         }
+
+
+        public DataTable GetPurchaseReportData(int purchaseID)
+        {
+            string query = $"EXEC sp_GetPurchaseReport @PurchaseID = {purchaseID}";
+            try
+            {
+                return ExecuteQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi truy xuất báo cáo nhập", ex);
+            }
+        }
     }
 }

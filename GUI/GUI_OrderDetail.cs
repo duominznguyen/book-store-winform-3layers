@@ -375,16 +375,15 @@ namespace GUI
                 rpt_Order rpt_Order = new rpt_Order();
                 rpt_Order.SetDataSource(data);
 
-                GUI_OrderRepot frmReport = new GUI_OrderRepot();
-                frmReport.rpv_OrderReportViewer.ReportSource = rpt_Order;
-                frmReport.rpv_OrderReportViewer.Refresh();
-                frmReport.ShowDialog();
+                GUI_Report report = new GUI_Report();
+                report.crv_Report.ReportSource = rpt_Order;
+                report.crv_Report.Refresh();
+                report.ShowDialog();
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi in đơn hàng: " + ex.Message);
-
 
             }
         }

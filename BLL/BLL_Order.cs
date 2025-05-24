@@ -97,6 +97,16 @@ namespace BLL
             return _dalOrder.GetAllOrder();
         }
 
-
+        public DataTable GetOrderById(int orderId)
+        {
+            try
+            {
+                return _dalOrder.GetOrderById(orderId);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

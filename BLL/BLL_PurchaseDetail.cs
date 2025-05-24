@@ -119,5 +119,18 @@ namespace BLL
                 return new Result(false, "Lỗi khi xóa chi tiết đơn hàng: " + ex.Message);
             }
         }
+
+
+        public DataTable GetPurchaseReportData(int purchaseID)
+        {
+            try
+            {
+                return _dalPurchaseDetail.GetPurchaseReportData(purchaseID);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

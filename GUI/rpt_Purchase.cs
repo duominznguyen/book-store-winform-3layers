@@ -16,14 +16,14 @@ namespace GUI {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rptPurchase : ReportClass {
+    public class rpt_Purchase : ReportClass {
         
-        public rptPurchase() {
+        public rpt_Purchase() {
         }
         
         public override string ResourceName {
             get {
-                return "rptPurchase.rpt";
+                return "rpt_Purchase.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace GUI {
         
         public override string FullResourceName {
             get {
-                return "GUI.rptPurchase.rpt";
+                return "GUI.rpt_Purchase.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace GUI {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedrptPurchase : Component, ICachedReport {
+    public class Cachedrpt_Purchase : Component, ICachedReport {
         
-        public CachedrptPurchase() {
+        public Cachedrpt_Purchase() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace GUI {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rptPurchase rpt = new rptPurchase();
+            rpt_Purchase rpt = new rpt_Purchase();
             rpt.Site = this.Site;
             return rpt;
         }
