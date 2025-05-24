@@ -72,3 +72,7 @@ E:\@Study\Project1\bookStoreManagement-winform-3layers-with-crystal-report\GUI\b
 E:\@Study\Project1\bookStoreManagement-winform-3layers-with-crystal-report\GUI\bin\Debug\Entities.pdb
 E:\@Study\Project1\bookStoreManagement-winform-3layers-with-crystal-report\GUI\bin\Debug\DAL.pdb
 E:\@Study\Project1\bookStoreManagement-winform-3layers-with-crystal-report\GUI\obj\Debug\GUI.csproj.Up2Date
+E:\@Study\Project1\bookStoreManagement-winform-3layers-with-crystal-report\GUI\bin\Debug\EntityFramework.dll
+E:\@Study\Project1\bookStoreManagement-winform-3layers-with-crystal-report\GUI\bin\Debug\EntityFramework.SqlServer.dll
+E:\@Study\Project1\bookStoreManagement-winform-3layers-with-crystal-report\GUI\bin\Debug\EntityFramework.xml
+E:\@Study\Project1\bookStoreManagement-winform-3layers-with-crystal-report\GUI\bin\Debug\EntityFramework.SqlServer.xml

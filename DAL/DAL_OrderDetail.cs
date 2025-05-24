@@ -80,18 +80,16 @@ namespace DAL
 
         public DataTable GetOrderPrint(int orderId)
         {
-            string query =
-                $"SELECT od.OrderID, od.OrderDate, c.CustomerID, c.Name AS 'CustomerName', e.EmployeeID, e.Name AS 'EmployeeName', b.BookID, b.Title, odt.Quantity, odt.SellPrice\r\n" +
-                $"FROM OrderDetails odt\r\n" +
-                $"INNER JOIN Orders od ON odt.OrderID = od.OrderID\r\n" +
-                $"INNER JOIN Customers c ON od.CustomerID = c.CustomerID\r\n" +
-                $"INNER JOIN Employees e ON od.EmployeeID = e.EmployeeID\r\n" +
-                $"INNER JOIN Books b ON odt.BookID = b.BookID\r\n" +
-                $"WHERE odt.OrderID = {orderId};";
-
-            return ExecuteQuery(query);
+            string query = $"EXEC sp_GetOrderReport @OrderID = {orderId}";
+            try
+            {
+                return ExecuteQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi truy xuất csdl", ex);
+            }
         }
-
 
     }
 

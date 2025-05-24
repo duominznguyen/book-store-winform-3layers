@@ -365,24 +365,28 @@ namespace GUI
             ClearInputFields();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_PrintOrder_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("In đơn hàng thành công.");
-            DataTable data = _bllOrderDetail.GetOrderPrint(_orderId);
+            try
+            {
+                DataTable data = _bllOrderDetail.GetOrderPrint(_orderId);
 
-            rptOrder rptOrder = new rptOrder();
-            rptOrder.SetDataSource(data);
+                rpt_Order rpt_Order = new rpt_Order();
+                rpt_Order.SetDataSource(data);
 
-            GUI_OrderRepot gUI_OrderRepot = new GUI_OrderRepot();
-            gUI_OrderRepot.crv_Order.ReportSource = rptOrder;
+                GUI_OrderRepot frmReport = new GUI_OrderRepot();
+                frmReport.rpv_OrderReportViewer.ReportSource = rpt_Order;
+                frmReport.rpv_OrderReportViewer.Refresh();
+                frmReport.ShowDialog();
 
-            gUI_OrderRepot.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi in đơn hàng: " + ex.Message);
 
+
+            }
         }
     }
 }

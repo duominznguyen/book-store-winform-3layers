@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\bookstoremanagement-winform-3layers-with-crystal-report\\gui\\gui_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\bookstoremanagement-winform-3layers-with-crystal-report\\gui\\gui_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\bookstoremanagement-winform-3layers-with-crystal-report\\gui\\gui_main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\gui\\gui_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\gui\\gui_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\gui\\gui_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\gui\\gui_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\bookstoremanagement-winform-3layers-with-crystal-report\\gui\\gui_orderrepot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_orderrepot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\bookstoremanagement-winform-3layers-with-crystal-report\\gui\\gui_orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\bookstoremanagement-winform-3layers-with-crystal-report\\gui\\gui_orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|e:\\@study\\project1\\bookstoremanagement-winform-3layers-with-crystal-report\\dal\\dal_orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|solutionrelative:dal\\dal_orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|e:\\@study\\project1\\bookstoremanagement-winform-3layers-with-crystal-report\\dal\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|solutionrelative:dal\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -75,69 +83,102 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GUI_Main.cs",
-              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Main.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_Main.cs",
-              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Main.cs*",
-              "RelativeToolTip": "GUI\\GUI_Main.cs*",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAYwIYAAAAhAAAAAAAAAA==",
+              "Title": "GUI_Order.cs [Design]",
+              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Order.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_Order.cs",
+              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Order.cs [Design]",
+              "RelativeToolTip": "GUI\\GUI_Order.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:34:42.004Z",
+              "WhenOpened": "2025-05-24T09:15:07.156Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DbConnect.cs",
+              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\DAL\\DbConnect.cs",
+              "RelativeDocumentMoniker": "DAL\\DbConnect.cs",
+              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\DAL\\DbConnect.cs",
+              "RelativeToolTip": "DAL\\DbConnect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T09:08:31.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GUI_Main.Designer.cs",
-              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Main.Designer.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_Main.Designer.cs",
-              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Main.Designer.cs",
-              "RelativeToolTip": "GUI\\GUI_Main.Designer.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAnwLEAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "DAL_OrderDetail.cs",
+              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\DAL\\DAL_OrderDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\DAL_OrderDetail.cs",
+              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\DAL\\DAL_OrderDetail.cs",
+              "RelativeToolTip": "DAL\\DAL_OrderDetail.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T09:48:08.666Z",
+              "WhenOpened": "2025-05-24T09:06:55.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GUI_Main.cs [Design]",
-              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Main.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_Main.cs",
-              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Main.cs [Design]*",
-              "RelativeToolTip": "GUI\\GUI_Main.cs [Design]*",
+              "Title": "GUI_OrderRepot.cs [Design]",
+              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_OrderRepot.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_OrderRepot.cs",
+              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_OrderRepot.cs [Design]",
+              "RelativeToolTip": "GUI\\GUI_OrderRepot.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:34:33.128Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GUI_LogIn.cs",
-              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_LogIn.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_LogIn.cs",
-              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_LogIn.cs",
-              "RelativeToolTip": "GUI\\GUI_LogIn.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwCwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:33:32.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GUI_LogIn.cs [Design]",
-              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_LogIn.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_LogIn.cs",
-              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_LogIn.cs [Design]",
-              "RelativeToolTip": "GUI\\GUI_LogIn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T08:33:29.924Z",
+              "WhenOpened": "2025-05-24T09:04:47.182Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "GUI_OrderDetail.cs [Design]",
+              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_OrderDetail.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_OrderDetail.cs",
+              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_OrderDetail.cs [Design]",
+              "RelativeToolTip": "GUI\\GUI_OrderDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T07:52:52.893Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GUI_OrderDetail.cs",
+              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_OrderDetail.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_OrderDetail.cs",
+              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_OrderDetail.cs",
+              "RelativeToolTip": "GUI\\GUI_OrderDetail.cs",
+              "ViewState": "AgIAAGQBAAAAAAAAAAA5wIUBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T07:25:52.717Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "cff54888-b5bf-490e-a21d-45d029d4233f",
+        "Display": 0,
+        "X": 270,
+        "Y": 97,
+        "Width": 1099,
+        "Height": 808,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\Program.cs",
               "RelativeDocumentMoniker": "GUI\\Program.cs",
@@ -146,6 +187,40 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T08:32:53.799Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "6d8d316d-b423-4e45-a409-ccc52be33b83",
+        "Display": 0,
+        "X": 270,
+        "Y": 101,
+        "Width": 1099,
+        "Height": 808,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GUI_Order.cs",
+              "DocumentMoniker": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Order.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_Order.cs",
+              "ToolTip": "E:\\@Study\\Project1\\bookStoreManagement-winform-3layers-with-crystal-report\\GUI\\GUI_Order.cs",
+              "RelativeToolTip": "GUI\\GUI_Order.cs",
+              "ViewState": "AgIAADgBAAAAAAAAAAAIwFIBAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T07:22:45.741Z",
               "EditorCaption": ""
             }
           ]

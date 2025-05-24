@@ -320,5 +320,24 @@ namespace GUI
             }
 
         }
+
+        private void btn_ChiTietHoaDon_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_MaDH.Text))
+            {
+                MessageBox.Show("Vui lòng nhập mã đơn bán để xem chi tiết.");
+                return;
+            }
+            if (!int.TryParse(txt_MaDH.Text, out _))
+            {
+                MessageBox.Show("Mã đơn bán phải là số nguyên.");
+                return;
+            }
+
+            int orderId = int.Parse(txt_MaDH.Text);
+            GUI_OrderDetail gUI_OrderDetail = new GUI_OrderDetail(orderId);
+            gUI_OrderDetail.ShowDialog();
+
+        }
     }
 }

@@ -227,6 +227,7 @@
             this.btn_ChiTietHoaDon.TabIndex = 5;
             this.btn_ChiTietHoaDon.Text = "Chi tiết hóa đơn";
             this.btn_ChiTietHoaDon.UseVisualStyleBackColor = true;
+            this.btn_ChiTietHoaDon.Click += new System.EventHandler(this.btn_ChiTietHoaDon_Click);
             // 
             // dgv_DonBan
             // 

@@ -9,7 +9,7 @@ namespace DAL
 
         public DbConnect()
         {
-            _connectionString = @"Data Source=DUOMINZ\SQLEXPRESS;Initial Catalog=BookstoreDB;Integrated Security=True;TrustServerCertificate=True";
+            _connectionString = @"Data Source=DUOMINZ\SQLEXPRESS;Initial Catalog=BookstoreDB_ver1;Integrated Security=True;TrustServerCertificate=True";
         }
 
         protected DataTable ExecuteQuery(string query)

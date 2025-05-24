@@ -37,8 +37,17 @@
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +61,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ds_Report.cs">
+      <DependentUpon>ds_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_Report.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GUI_Account.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,22 +147,14 @@
     <Compile Include="GUI_Supplier.Designer.cs">
       <DependentUpon>GUI_Supplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="ds_Order.cs">
-      <DependentUpon>ds_Order.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ds_Order.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ds_Order.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="rptOrder.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptOrder.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rpt_Order.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Order.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="GUI_Account.resx">
       <DependentUpon>GUI_Account.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,25 +194,25 @@
     <EmbeddedResource Include="GUI_Supplier.resx">
       <DependentUpon>GUI_Supplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="rptOrder.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptOrder.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="ds_Order.xsc">
-      <DependentUpon>ds_Order.xsd</DependentUpon>
+    <EmbeddedResource Include="rpt_Order.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Order.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ds_Report.xsc">
+      <DependentUpon>ds_Report.xsd</DependentUpon>
     </None>
-    <None Include="ds_Order.xsd">
+    <None Include="ds_Report.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ds_Order.Designer.cs</LastGenOutput>
+      <LastGenOutput>ds_Report.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ds_Order.xss">
-      <DependentUpon>ds_Order.xsd</DependentUpon>
+    <None Include="ds_Report.xss">
+      <DependentUpon>ds_Report.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -261,6 +270,7 @@
     <Content Include="Resources\Images\x-mark.png" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
