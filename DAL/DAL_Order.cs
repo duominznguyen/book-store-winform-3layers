@@ -42,6 +42,53 @@ namespace DAL
             return ExecuteQuery(query);
         }
 
+        public DataTable GetDayOrdersChartData(DateTime oderDate)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                string query = $"EXEC sp_GetDayOrderChartdataByDate '{oderDate.ToString("yyyy-MM-dd")}'";
+                data = ExecuteQuery(query);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi truy xuất dữ liệu biểu đồ: " + ex.Message);
+            }
+        }
+
+        public DataTable GetMonthOrdersChartData(int year, int month)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                string query = $"EXEC sp_GetMonthOrderChartdata @Year = {year}, @Month = {month}";
+                data = ExecuteQuery(query);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi truy xuất dữ liệu biểu đồ: " + ex.Message);
+            }
+        }
+
+        public DataTable GetYearOrdersChartData(int year)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                string query = $"EXEC sp_GetYearOrderChartdata @Year = {year}";
+                data = ExecuteQuery(query);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi truy xuất dữ liệu biểu đồ: " + ex.Message);
+            }
+        }
+
+
+        // C_UD operations for Order
         public bool AddOrder(Order order)
         {
             string query = $"INSERT INTO Orders (OrderID, OrderDate, EmployeeID, CustomerID) VALUES ({order.OrderID}, '{order.OrderDate.ToString("yyyy-MM-dd")}', {order.EmployeeID}, {order.CustomerID})";

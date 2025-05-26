@@ -15,6 +15,9 @@ namespace BLL
         private DAL_Purchase _dalPurchase;
         private DAL_Supplier _dalSupplier;
         private DAL_Employee _dalEmployee;
+
+        
+
         public BLL_Purchase()
         {
             _dalPurchase = new DAL_Purchase();
@@ -33,6 +36,18 @@ namespace BLL
                 throw new Exception("Lỗi truy xuất cơ sở dữ liệu: " + ex.Message);
             }
 
+        }
+
+        public DataTable GetPurchaseByID(int purchaseID)
+        {
+            try
+            {
+                return _dalPurchase.GetPurchaseByID(purchaseID);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
 

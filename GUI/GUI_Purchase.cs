@@ -333,5 +333,37 @@ namespace GUI
             }
         }
 
+        private void btn_PurchaseDetail_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_PurchaseID.Text))
+            {
+                MessageBox.Show("Vui lòng chọn một đơn hàng để xem chi tiết");
+                return;
+            }
+            if (!int.TryParse(txt_PurchaseID.Text, out int l_purchaseId) && l_purchaseId > 0)
+            {
+                MessageBox.Show("Mã đơn hàng không hợp lệ");
+                return;
+            }
+
+
+            int purchaseId = int.Parse(txt_PurchaseID.Text);
+            try
+            {
+                if (_bllPurchase.GetPurchaseByID(purchaseId).Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy đơn hàng với mã " + purchaseId);
+                }
+                else
+                {
+                    GUI_PurchaseDetail purchaseDetailForm = new GUI_PurchaseDetail(purchaseId);
+                    purchaseDetailForm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
     }
 }

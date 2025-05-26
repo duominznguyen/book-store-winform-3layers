@@ -330,7 +330,7 @@ namespace GUI
             }
             if (!int.TryParse(txt_MaDH.Text, out _))
             {
-                MessageBox.Show("Mã đơn bán phải là số nguyên.");
+                MessageBox.Show("Mã đơn bán phải là số nguyên không dấu.");
                 return;
             }
 

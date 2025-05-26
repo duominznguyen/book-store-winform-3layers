@@ -86,6 +86,7 @@
             this.btn_PurchaseDetail.TabIndex = 21;
             this.btn_PurchaseDetail.Text = "Chi tiết hóa đơn nhập";
             this.btn_PurchaseDetail.UseVisualStyleBackColor = true;
+            this.btn_PurchaseDetail.Click += new System.EventHandler(this.btn_PurchaseDetail_Click);
             // 
             // txt_EmployeeID
             // 
@@ -369,7 +370,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "GUI_Purchase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GUI_Purchase";
+            this.Text = "igt";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_Purchase_Load);
             this.groupBox1.ResumeLayout(false);

@@ -142,12 +142,12 @@
             this.cms_user.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsi_SignOut});
             this.cms_user.Name = "contextMenuStrip1";
-            this.cms_user.Size = new System.Drawing.Size(241, 69);
+            this.cms_user.Size = new System.Drawing.Size(166, 36);
             // 
             // cmsi_SignOut
             // 
             this.cmsi_SignOut.Name = "cmsi_SignOut";
-            this.cmsi_SignOut.Size = new System.Drawing.Size(240, 32);
+            this.cmsi_SignOut.Size = new System.Drawing.Size(165, 32);
             this.cmsi_SignOut.Text = "Đăng xuất";
             this.cmsi_SignOut.Click += new System.EventHandler(this.cmsi_SignOut_Click);
             // 

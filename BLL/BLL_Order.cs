@@ -108,5 +108,43 @@ namespace BLL
                 throw new Exception(ex.Message);
             }
         }
+
+
+        public DataTable GetDayOrdersChartData(DateTime orderDate)
+        {
+            try
+            {
+                return _dalOrder.GetDayOrdersChartData(orderDate);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public DataTable GetMonthOrdersChartData(int year, int month)
+        {
+            try
+            {
+                return _dalOrder.GetMonthOrdersChartData(year, month);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public DataTable GetYearOrdersChartData(int year)
+        {
+            try
+            {
+                return _dalOrder.GetYearOrdersChartData(year);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
