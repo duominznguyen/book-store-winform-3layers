@@ -47,11 +47,11 @@
             this.rad_Sua = new System.Windows.Forms.RadioButton();
             this.dgv_Customers = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_SearchTerm = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.rad_Them = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_SearchTerm = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Customers)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -262,6 +262,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
+            // txt_SearchTerm
+            // 
+            this.txt_SearchTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SearchTerm.Location = new System.Drawing.Point(648, 114);
+            this.txt_SearchTerm.MaxLength = 100;
+            this.txt_SearchTerm.Name = "txt_SearchTerm";
+            this.txt_SearchTerm.Size = new System.Drawing.Size(422, 35);
+            this.txt_SearchTerm.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(446, 117);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(112, 29);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Từ khóa: ";
+            // 
             // rad_Them
             // 
             this.rad_Them.AutoSize = true;
@@ -306,25 +325,6 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "QUẢN LÝ KHÁCH HÀNG THÀNH VIÊN";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(446, 117);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 29);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Từ khóa: ";
-            // 
-            // txt_SearchTerm
-            // 
-            this.txt_SearchTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SearchTerm.Location = new System.Drawing.Point(648, 114);
-            this.txt_SearchTerm.MaxLength = 100;
-            this.txt_SearchTerm.Name = "txt_SearchTerm";
-            this.txt_SearchTerm.Size = new System.Drawing.Size(422, 35);
-            this.txt_SearchTerm.TabIndex = 18;
-            // 
             // GUI_Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -336,7 +336,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "GUI_Customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GUI_Customer";
+            this.Text = "Nhà sách Nhã Nam - Quản lý khách hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_Customer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Customers)).EndInit();

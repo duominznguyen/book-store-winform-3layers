@@ -305,9 +305,10 @@
             this.Controls.Add(this.dgv_Accounts);
             this.Name = "GUI_Account";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GUI_Account";
+            this.Text = "Nhà sách Nhã Nam - Quản lý tài khoản";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_Account_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GUI_Account_KeyDown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_PasswordChar)).EndInit();

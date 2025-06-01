@@ -22,6 +22,7 @@ namespace GUI
             InitializeComponent();
             _bllAccount = new BLL_Account();
             _bllEmployee = new BLL_Employee();
+
         }
 
         private void btn_logIn_Click(object sender, EventArgs e)

@@ -504,6 +504,9 @@ namespace GUI
                 GUI_Report report = new GUI_Report();
                 report.crv_Report.ReportSource = rpt_Purchase;
                 report.crv_Report.Refresh();
+
+                report.FormClosed += (s, args) => this.Show();
+                this.Hide();
                 report.ShowDialog();
 
             }
@@ -512,5 +515,6 @@ namespace GUI
                 MessageBox.Show("Lỗi khi in báo cáo: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

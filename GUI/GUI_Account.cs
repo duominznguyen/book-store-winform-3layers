@@ -370,5 +370,13 @@ namespace GUI
             txt_SearchValue.Clear();
             LoadAccountSDataGridView();
         }
+
+        private void GUI_Account_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

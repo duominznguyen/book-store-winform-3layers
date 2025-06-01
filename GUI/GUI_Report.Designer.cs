@@ -49,7 +49,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crv_Report);
             this.Name = "GUI_Report";
-            this.Text = "GUI_Report";
+            this.Text = "In hóa đơn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 

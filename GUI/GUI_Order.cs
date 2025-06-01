@@ -346,5 +346,7 @@ namespace GUI
             gUI_OrderDetail.ShowDialog();
 
         }
+
+
     }
 }

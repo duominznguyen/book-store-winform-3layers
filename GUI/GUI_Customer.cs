@@ -356,5 +356,7 @@ namespace GUI
                 MessageBox.Show("Vui lòng chọn một chức năng.");
             }
         }
+
+
     }
 }

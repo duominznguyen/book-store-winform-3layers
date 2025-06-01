@@ -93,7 +93,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(209, 104);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Hiệu sách Linh Anh";
+            this.label3.Text = "Nhà sách Nhã Nam";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.UseWaitCursor = true;
             // 
@@ -216,6 +216,7 @@
             this.btn_ThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ThongKe.UseVisualStyleBackColor = false;
             this.btn_ThongKe.UseWaitCursor = true;
+            this.btn_ThongKe.Click += new System.EventHandler(this.btn_ThongKe_Click);
             // 
             // label2
             // 
@@ -561,7 +562,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "GUI_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GUI_Main";
+            this.Text = "Nhà sách Nhã Nam - Trang chủ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_Main_Load);
             this.panel1.ResumeLayout(false);

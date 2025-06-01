@@ -50,10 +50,10 @@
             this.rad_Them = new System.Windows.Forms.RadioButton();
             this.dgv_Employees = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_SearchTerm = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt_SearchTerm = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Employees)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -294,6 +294,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(506, 120);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 29);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Từ khóa: ";
+            // 
+            // txt_SearchTerm
+            // 
+            this.txt_SearchTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SearchTerm.Location = new System.Drawing.Point(703, 117);
+            this.txt_SearchTerm.MaxLength = 12;
+            this.txt_SearchTerm.Name = "txt_SearchTerm";
+            this.txt_SearchTerm.Size = new System.Drawing.Size(425, 35);
+            this.txt_SearchTerm.TabIndex = 20;
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -329,25 +348,6 @@
             this.label7.TabIndex = 20;
             this.label7.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
-            // txt_SearchTerm
-            // 
-            this.txt_SearchTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SearchTerm.Location = new System.Drawing.Point(703, 117);
-            this.txt_SearchTerm.MaxLength = 12;
-            this.txt_SearchTerm.Name = "txt_SearchTerm";
-            this.txt_SearchTerm.Size = new System.Drawing.Size(425, 35);
-            this.txt_SearchTerm.TabIndex = 20;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(506, 120);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 29);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Từ khóa: ";
-            // 
             // GUI_Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -359,7 +359,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "GUI_Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GUI_Order";
+            this.Text = "Nhà sách Nhã Nam - Quản lý nhân viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_Employee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Employees)).EndInit();

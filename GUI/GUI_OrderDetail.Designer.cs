@@ -394,7 +394,7 @@
             this.Controls.Add(this.label1);
             this.Name = "GUI_OrderDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GUI_OrderDetail";
+            this.Text = "Nhà sách Nhã Nam - Bán hàng - Chi tiết đơn hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_OrderDetail_Load);
             this.groupBox2.ResumeLayout(false);

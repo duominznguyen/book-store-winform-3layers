@@ -29,10 +29,12 @@ namespace GUI
 
         private void GUI_Main_Load(object sender, EventArgs e)
         {
-            string userRole = _bllEmployee.GetEmployeeById(_account.EmployeeId).Rows[0]["Role"].ToString();
+            DataRow employeeRow = _bllEmployee.GetEmployeeById(_account.EmployeeId).Rows[0];
 
+            string userRole = employeeRow["Role"].ToString();
             if (userRole == "Nhân viên")
             {
+
                 btn_Sach.Visible = false;
                 ptb_KhoSach.Visible = false;
 
@@ -54,6 +56,8 @@ namespace GUI
                 btn_ThongKe.Visible = false;
                 ptb_ThongKe.Visible = false;
             }
+
+            txt_employeeName.Text = userRole.ToString() + " - " + employeeRow["Name"].ToString();
 
         }
 
@@ -126,6 +130,15 @@ namespace GUI
 
         }
 
+        private void btn_ThongKe_Click(object sender, EventArgs e)
+        {
+            GUI_Statistical statisticalForm = new GUI_Statistical();
+            statisticalForm.FormClosed += (s, args) => this.Show();
+            statisticalForm.Show();
+            this.Hide();
+        }
+
+
         private void cmsi_SignOut_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc chắn muốn đăng xuất không?", "Đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -135,5 +148,6 @@ namespace GUI
                 loginForm.Show();
             }
         }
+
     }
 }

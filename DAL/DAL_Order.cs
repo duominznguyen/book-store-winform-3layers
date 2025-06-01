@@ -87,6 +87,51 @@ namespace DAL
             }
         }
 
+        public DataTable GetRevenueByDate(DateTime orderDate)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                string query = $"EXEC sp_GetRevenueByDate '{orderDate.ToString("yyyy-MM-dd")}'";
+                data = ExecuteQuery(query);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi truy xuất dữ liệu doanh thu: " + ex.Message);
+            }
+        }
+
+        public DataTable GetDailyRevenueChartData(DateTime startDate, DateTime endDate)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                string query = $"EXEC sp_GetDailyRevenueChartData @StartDate = '{startDate}', @EndDate = '{endDate}'";
+                data = ExecuteQuery(query);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi truy xuất dữ liệu biểu đồ doanh thu: " + ex.Message);
+            }
+        }
+
+        public DataTable GetMonthlyRevenueChartData(int year)
+        {
+            DataTable data = new DataTable();
+            try
+            {
+                string query = $"EXEC sp_GetMonthlyRevenueChartData @Year = {year}";
+                data = ExecuteQuery(query);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi truy xuất dữ liệu biểu đồ doanh thu: " + ex.Message);
+            }
+        }
+
 
         // C_UD operations for Order
         public bool AddOrder(Order order)

@@ -260,5 +260,13 @@ namespace GUI
                 MessageBox.Show("Vui lòng chọn chức năng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void GUI_BookCategory_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

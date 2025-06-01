@@ -370,7 +370,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "GUI_Purchase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "igt";
+            this.Text = "Nhà sách Nhã Nam - Nhập hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_Purchase_Load);
             this.groupBox1.ResumeLayout(false);

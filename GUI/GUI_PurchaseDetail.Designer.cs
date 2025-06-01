@@ -391,7 +391,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "GUI_PurchaseDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GUI_PurchaseDetail";
+            this.Text = "Nhà sách Nhã Nam - Nhập hàng - Chi tiết đơn hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_PurchaseDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Books)).EndInit();

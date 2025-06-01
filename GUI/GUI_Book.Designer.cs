@@ -382,9 +382,10 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "GUI_Book";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "`";
+            this.Text = "Nhà sách Nhã Nam - Quản lý sách";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GUI_Book_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GUI_Book_KeyDown);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Sach)).EndInit();

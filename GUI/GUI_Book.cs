@@ -272,5 +272,13 @@ namespace GUI
             }
             return true;
         }
+
+        private void GUI_Book_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }
