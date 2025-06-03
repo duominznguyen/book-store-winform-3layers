@@ -56,7 +56,15 @@ namespace GUI
                 txt_NhaXB.Text = dgv_Sach.Rows[e.RowIndex].Cells["Publisher"].Value.ToString();
                 txt_Gia.Text = dgv_Sach.Rows[e.RowIndex].Cells["Price"].Value.ToString();
                 rtxt_MoTa.Text = dgv_Sach.Rows[e.RowIndex].Cells["Description"].Value.ToString();
-                cbb_TheLoai.SelectedValue = dgv_Sach.Rows[e.RowIndex].Cells["CategoryID"].Value.ToString();
+                var selectedCategory = dgv_Sach.Rows[e.RowIndex].Cells["CategoryID"].Value.ToString();
+                if (selectedCategory != "")
+                {
+                    cbb_TheLoai.SelectedValue = dgv_Sach.Rows[e.RowIndex].Cells["CategoryID"].Value.ToString();
+                }
+                else
+                {
+                    cbb_TheLoai.SelectedIndex = -1;
+                }
                 txt_TonKho.Text = dgv_Sach.Rows[e.RowIndex].Cells["Quantity"].Value.ToString();
             }
         }
