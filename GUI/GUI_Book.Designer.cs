@@ -232,9 +232,11 @@
             // 
             this.txt_Gia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Gia.Location = new System.Drawing.Point(141, 343);
+            this.txt_Gia.MaxLength = 8;
             this.txt_Gia.Name = "txt_Gia";
             this.txt_Gia.Size = new System.Drawing.Size(475, 35);
             this.txt_Gia.TabIndex = 10;
+            this.txt_Gia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Gia_KeyPress);
             // 
             // rtxt_MoTa
             // 

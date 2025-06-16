@@ -70,7 +70,7 @@ namespace BLL
 
         public bool LogicValidateForAdd(Book book)
         {
-            return _dal.GetBookByID(book.BookID).Rows.Count == 0;
+            return true;
         }
 
         public bool LogicValidateForUpdate(Book book)

@@ -168,8 +168,8 @@ namespace DAL
         {
             try
             {
-                string query = $"INSERT INTO Employees (EmployeeID, Name, Email, Phone, Address, Role) " +
-                               $"VALUES ({employee.EmployeeID}, N'{employee.Name}', '{employee.Email}', '{employee.Phone}', N'{employee.Address}', N'{employee.Role}')";
+                string query = $"INSERT INTO Employees (Name, Email, Phone, Address, Role) " +
+                               $"VALUES (N'{employee.Name}', '{employee.Email}', '{employee.Phone}', N'{employee.Address}', N'{employee.Role}')";
                 ExecuteNonQuery(query);
                 return new Result(true, "Thêm nhân viên thành công.");
             }

@@ -12,15 +12,26 @@ namespace BLL
     public class BLL_Order
     {
         private DAL_Order _dalOrder;
+        private DAL_Customer _dalCustomer;
+        private DAL_Employee _dalEmployee;
         public BLL_Order()
         {
             _dalOrder = new DAL_Order();
+            _dalCustomer = new DAL_Customer();
+            _dalEmployee = new DAL_Employee();
         }
 
         public bool IsLogicValidInputForAdd(Order order)
         {
-            bool IsNotExistOrder = _dalOrder.GetOrderById(order.OrderID).Rows.Count == 0;
-            return IsNotExistOrder;
+            if(_dalCustomer.GetCustomerById(order.CustomerID).Rows.Count == 0)
+            {
+                throw new Exception("Khách hàng không tồn tại.");
+            }
+            if (_dalEmployee.GetEmployeeById(order.EmployeeID).Rows.Count == 0)
+            {
+                throw new Exception("Nhân viên không tồn tại.");
+            }
+            return true; // Logic for checking if the order can be added, e.g., checking if it already exists.
         }
 
         public bool IsLogicValidInputForUpdate(Order order)
@@ -36,14 +47,22 @@ namespace BLL
 
         public bool AddOrder(Order order)
         {
-            if (IsLogicValidInputForAdd(order))
+            try
             {
-                return _dalOrder.AddOrder(order);
+                if (IsLogicValidInputForAdd(order))
+                {
+                    return _dalOrder.AddOrder(order);
+                }
+                else
+                {
+                    throw new Exception("Đơn hàng không thể thêm do dữ liệu không hợp lệ.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                throw new Exception("Đơn hàng đã tồn tại trong hệ thống.");
+                throw new Exception(ex.Message);
             }
+
         }
         public bool UpdateOrder(Order order)
         {

@@ -195,6 +195,7 @@
             this.txt_CategoryID.Name = "txt_CategoryID";
             this.txt_CategoryID.Size = new System.Drawing.Size(565, 35);
             this.txt_CategoryID.TabIndex = 0;
+            this.txt_CategoryID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CategoryID_KeyPress);
             // 
             // label1
             // 

@@ -4,3 +4,9 @@ E:\@Study\Project1\bookStoreManagement-winform-3layers\Entities\obj\Debug\Entiti
 E:\@Study\Project1\bookStoreManagement-winform-3layers\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
 E:\@Study\Project1\bookStoreManagement-winform-3layers\Entities\obj\Debug\Entities.dll
 E:\@Study\Project1\bookStoreManagement-winform-3layers\Entities\obj\Debug\Entities.pdb
+E:\@Study\Project1\FinalApp\book-store-winform-3layers\Entities\bin\Debug\Entities.dll
+E:\@Study\Project1\FinalApp\book-store-winform-3layers\Entities\bin\Debug\Entities.pdb
+E:\@Study\Project1\FinalApp\book-store-winform-3layers\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
+E:\@Study\Project1\FinalApp\book-store-winform-3layers\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+E:\@Study\Project1\FinalApp\book-store-winform-3layers\Entities\obj\Debug\Entities.dll
+E:\@Study\Project1\FinalApp\book-store-winform-3layers\Entities\obj\Debug\Entities.pdb

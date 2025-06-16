@@ -192,7 +192,7 @@
             this.btn_TaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_TaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TaiKhoan.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_TaiKhoan.Location = new System.Drawing.Point(12, 577);
+            this.btn_TaiKhoan.Location = new System.Drawing.Point(12, 645);
             this.btn_TaiKhoan.Name = "btn_TaiKhoan";
             this.btn_TaiKhoan.Size = new System.Drawing.Size(276, 46);
             this.btn_TaiKhoan.TabIndex = 28;
@@ -245,7 +245,7 @@
             this.btn_NhaCC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_NhaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhaCC.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_NhaCC.Location = new System.Drawing.Point(12, 640);
+            this.btn_NhaCC.Location = new System.Drawing.Point(12, 381);
             this.btn_NhaCC.Name = "btn_NhaCC";
             this.btn_NhaCC.Size = new System.Drawing.Size(276, 46);
             this.btn_NhaCC.TabIndex = 14;
@@ -261,7 +261,7 @@
             this.btn_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_NhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhanVien.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_NhanVien.Location = new System.Drawing.Point(12, 512);
+            this.btn_NhanVien.Location = new System.Drawing.Point(12, 580);
             this.btn_NhanVien.Name = "btn_NhanVien";
             this.btn_NhanVien.Size = new System.Drawing.Size(276, 46);
             this.btn_NhanVien.TabIndex = 12;
@@ -277,7 +277,7 @@
             this.btn_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_NhapHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhapHang.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_NhapHang.Location = new System.Drawing.Point(12, 447);
+            this.btn_NhapHang.Location = new System.Drawing.Point(12, 315);
             this.btn_NhapHang.Name = "btn_NhapHang";
             this.btn_NhapHang.Size = new System.Drawing.Size(276, 46);
             this.btn_NhapHang.TabIndex = 11;
@@ -309,7 +309,7 @@
             this.btn_TheLoaiSach.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_TheLoaiSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TheLoaiSach.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_TheLoaiSach.Location = new System.Drawing.Point(13, 380);
+            this.btn_TheLoaiSach.Location = new System.Drawing.Point(13, 514);
             this.btn_TheLoaiSach.Name = "btn_TheLoaiSach";
             this.btn_TheLoaiSach.Size = new System.Drawing.Size(276, 46);
             this.btn_TheLoaiSach.TabIndex = 9;
@@ -325,12 +325,12 @@
             this.btn_Sach.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Sach.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sach.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_Sach.Location = new System.Drawing.Point(12, 316);
+            this.btn_Sach.Location = new System.Drawing.Point(12, 448);
             this.btn_Sach.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btn_Sach.Name = "btn_Sach";
             this.btn_Sach.Size = new System.Drawing.Size(276, 46);
             this.btn_Sach.TabIndex = 8;
-            this.btn_Sach.Text = "              Kho sách";
+            this.btn_Sach.Text = "              Sách";
             this.btn_Sach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Sach.UseVisualStyleBackColor = false;
             this.btn_Sach.UseWaitCursor = true;
@@ -396,7 +396,7 @@
             // 
             this.ptb_TaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(147)))), ((int)(((byte)(106)))));
             this.ptb_TaiKhoan.Image = global::GUI.Properties.Resources.profile_12591613;
-            this.ptb_TaiKhoan.Location = new System.Drawing.Point(24, 580);
+            this.ptb_TaiKhoan.Location = new System.Drawing.Point(24, 648);
             this.ptb_TaiKhoan.Name = "ptb_TaiKhoan";
             this.ptb_TaiKhoan.Size = new System.Drawing.Size(45, 41);
             this.ptb_TaiKhoan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -444,7 +444,7 @@
             // 
             this.ptb_NhaCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(147)))), ((int)(((byte)(106)))));
             this.ptb_NhaCC.Image = global::GUI.Properties.Resources.supplier;
-            this.ptb_NhaCC.Location = new System.Drawing.Point(24, 643);
+            this.ptb_NhaCC.Location = new System.Drawing.Point(24, 384);
             this.ptb_NhaCC.Name = "ptb_NhaCC";
             this.ptb_NhaCC.Size = new System.Drawing.Size(45, 41);
             this.ptb_NhaCC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -468,7 +468,7 @@
             // 
             this.ptb_NhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(147)))), ((int)(((byte)(106)))));
             this.ptb_NhanVien.Image = global::GUI.Properties.Resources.staff;
-            this.ptb_NhanVien.Location = new System.Drawing.Point(24, 514);
+            this.ptb_NhanVien.Location = new System.Drawing.Point(24, 582);
             this.ptb_NhanVien.Name = "ptb_NhanVien";
             this.ptb_NhanVien.Size = new System.Drawing.Size(45, 41);
             this.ptb_NhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -480,7 +480,7 @@
             // 
             this.ptb_NhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(147)))), ((int)(((byte)(106)))));
             this.ptb_NhapHang.Image = global::GUI.Properties.Resources.purchase;
-            this.ptb_NhapHang.Location = new System.Drawing.Point(24, 449);
+            this.ptb_NhapHang.Location = new System.Drawing.Point(24, 317);
             this.ptb_NhapHang.Name = "ptb_NhapHang";
             this.ptb_NhapHang.Size = new System.Drawing.Size(45, 41);
             this.ptb_NhapHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -504,7 +504,7 @@
             // 
             this.ptb_TheLoaiSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(147)))), ((int)(((byte)(106)))));
             this.ptb_TheLoaiSach.Image = global::GUI.Properties.Resources.bookCategory;
-            this.ptb_TheLoaiSach.Location = new System.Drawing.Point(25, 383);
+            this.ptb_TheLoaiSach.Location = new System.Drawing.Point(25, 517);
             this.ptb_TheLoaiSach.Name = "ptb_TheLoaiSach";
             this.ptb_TheLoaiSach.Size = new System.Drawing.Size(45, 41);
             this.ptb_TheLoaiSach.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -516,7 +516,7 @@
             // 
             this.ptb_KhoSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(147)))), ((int)(((byte)(106)))));
             this.ptb_KhoSach.Image = global::GUI.Properties.Resources.book;
-            this.ptb_KhoSach.Location = new System.Drawing.Point(24, 319);
+            this.ptb_KhoSach.Location = new System.Drawing.Point(24, 451);
             this.ptb_KhoSach.Name = "ptb_KhoSach";
             this.ptb_KhoSach.Size = new System.Drawing.Size(45, 41);
             this.ptb_KhoSach.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

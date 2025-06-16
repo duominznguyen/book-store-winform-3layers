@@ -19,15 +19,8 @@ namespace DAL
         {
             try
             {
-                // Code to add customer to the database
-                // For example:
-                // using (var context = new YourDbContext())
-                // {
-                //     context.Customers.Add(customer);
-                //     context.SaveChanges();
-                // }
-                string query = "INSERT INTO Customers (CustomerID, Name, Email, Phone, Address) " +
-                               $"VALUES ({customer.CustomerID}, N'{customer.Name}', '{customer.Email}', '{customer.Phone}', N'{customer.Address}')";
+                string query = "INSERT INTO Customers (Name, Email, Phone, Address) " +
+                               $"VALUES (N'{customer.Name}', '{customer.Email}', '{customer.Phone}', N'{customer.Address}')";
                 int rowsAffected = ExecuteNonQuery(query);
                 if (rowsAffected > 0)
                 {

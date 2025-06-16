@@ -13,16 +13,16 @@ namespace DAL
         public bool AddBook(Book book)
         {
 
-            string query = $"INSERT INTO Books (BookID, Title, Author, Publisher, Price, Description, Quantity, CategoryID) " +
-                           $"VALUES ('{book.BookID}', N'{book.Title}', N'{book.Author}', N'{book.Publisher}', {book.Price}, N'{book.Description}', {book.Quantity}, '{book.CategoryID}')";
+            string query = $"INSERT INTO Books (Title, Author, Publisher, Price, Description, Quantity, CategoryID) " +
+                           $"VALUES (N'{book.Title}', N'{book.Author}', N'{book.Publisher}', {book.Price}, N'{book.Description}', {book.Quantity}, '{book.CategoryID}')";
             int rowsAffected = ExecuteNonQuery(query);
             return rowsAffected > 0;
         }
 
         public bool UpdateBook(Book book)
         {
-            string query = $"UPDATE Books SET Title = '{book.Title}', Author = '{book.Author}', Publisher = '{book.Publisher}', " +
-                           $"Price = {book.Price}, Description = '{book.Description}', Quantity = {book.Quantity}, CategoryID = '{book.CategoryID}' " +
+            string query = $"UPDATE Books SET Title = N'{book.Title}', Author = N'{book.Author}', Publisher = N'{book.Publisher}', " +
+                           $"Price = {book.Price}, Description = N'{book.Description}', Quantity = {book.Quantity}, CategoryID = '{book.CategoryID}' " +
                            $"WHERE BookID = '{book.BookID}'";
             int rowsAffected = ExecuteNonQuery(query);
             return rowsAffected > 0;

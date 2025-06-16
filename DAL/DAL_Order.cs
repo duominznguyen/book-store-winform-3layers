@@ -136,7 +136,7 @@ namespace DAL
         // C_UD operations for Order
         public bool AddOrder(Order order)
         {
-            string query = $"INSERT INTO Orders (OrderID, OrderDate, EmployeeID, CustomerID) VALUES ({order.OrderID}, '{order.OrderDate.ToString("yyyy-MM-dd")}', {order.EmployeeID}, {order.CustomerID})";
+            string query = $"INSERT INTO Orders (OrderDate, EmployeeID, CustomerID) VALUES ('{order.OrderDate.ToString("yyyy-MM-dd")}', {order.EmployeeID}, {order.CustomerID})";
             return ExecuteNonQuery(query) > 0;
         }
 

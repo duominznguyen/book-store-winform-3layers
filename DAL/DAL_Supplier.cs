@@ -24,7 +24,7 @@ namespace DAL
 
         public int Insert(Supplier supplier)
         {
-            string query = $"INSERT INTO Suppliers (SupplierID, Name, Phone, Address) VALUES ({supplier.SupplierId}, N'{supplier.Name}', '{supplier.Phone}', N'{supplier.Address}')";
+            string query = $"INSERT INTO Suppliers (Name, Phone, Address) VALUES (N'{supplier.Name}', '{supplier.Phone}', N'{supplier.Address}')";
             return ExecuteNonQuery(query);
         }
         public int Update(Supplier supplier)

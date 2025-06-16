@@ -19,7 +19,7 @@ namespace BLL
 
         private bool IsLogicVaidatedAddCategory(int categoryId)
         {
-            return _dal.GetBookCategoryById(categoryId) == null;
+            return true;
         }
 
         private bool IsLogicVaidatedUpdateCategory(int categoryId)

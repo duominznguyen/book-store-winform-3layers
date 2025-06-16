@@ -56,12 +56,6 @@ namespace BLL
 
         private Result IsLogicValidForAddingEmployee(Employee employee)
         {
-            // logic to check if the employee can be added
-            // 1.Check if the employee ID already exists
-            if (_dalEmployee.GetEmployeeById(employee.EmployeeID).Rows.Count > 0)
-            {
-                return new Result(false, "Mã nhân viên đã tồn tại.");
-            }
             return new Result(true, "");
         }
 

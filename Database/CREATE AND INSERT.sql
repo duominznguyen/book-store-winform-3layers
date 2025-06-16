@@ -113,7 +113,23 @@ GO
 
 
 
+DROP TRIGGER IF EXISTS trg_DeleteBookCategory
+GO
+CREATE TRIGGER trg_DeleteBookCategory
+ON BookCategories
+INSTEAD OF DELETE
+AS
+BEGIN
+    -- Set NULL trong bảng Books
+    UPDATE Books
+    SET CategoryID = NULL
+    WHERE CategoryID IN (SELECT CategoryID FROM DELETED);
 
+    -- Xóa bản ghi trong bảng BookCategories
+    DELETE FROM BookCategories
+    WHERE CategoryID IN (SELECT CategoryID FROM DELETED);
+END;
+GO
 
 
 
@@ -651,6 +667,21 @@ VALUES
     (5, 5, 25, 80000);
 GO
 
+
+INSERT INTO PurchaseDetails (PurchaseID, BookID, Quantity, PurchasePrice)
+VALUES 
+    (1, 2, 8, 135000),
+    (1, 3, 12, 165000),
+    (2, 1, 10, 95000),
+    (2, 4, 7, 310000),
+    (3, 5, 15, 85000),
+    (3, 2, 10, 138000),
+    (4, 1, 5, 98000),
+    (4, 3, 8, 168000),
+    (5, 2, 20, 130000),
+    (5, 4, 6, 325000);
+GO
+
 -- Insert data into Orders
 INSERT INTO Orders (OrderID, OrderDate, CustomerID, EmployeeID)
 VALUES 
@@ -694,6 +725,64 @@ VALUES
     (3, 3, 3, 180000),
     (4, 4, 4, 350000),
     (5, 5, 1, 90000);
+GO 
+
+-- Insert data into OrderDetails (từ bản ghi 6 đến 50)
+INSERT INTO OrderDetails (OrderID, BookID, Quantity, SellPrice)
+VALUES 
+    (6, 1, 2, 110000),
+    (6, 2, 1, 130000),
+    (7, 3, 1, 160000),
+    (8, 4, 2, 340000),
+    (9, 5, 1, 95000),
+    (10, 1, 3, 125000),
+    (11, 2, 2, 155000),
+    (12, 3, 4, 185000),
+    (13, 4, 1, 360000),
+    (14, 5, 2, 88000),
+    (15, 1, 1, 120000),
+    (16, 2, 2, 145000),
+    (17, 3, 3, 170000),
+    (18, 4, 4, 340000),
+    (19, 5, 1, 91000),
+    (20, 1, 2, 130000),
+    (21, 2, 3, 140000),
+    (22, 3, 1, 160000),
+    (23, 4, 2, 355000),
+    (24, 5, 1, 97000),
+    (25, 1, 3, 115000),
+    (26, 2, 2, 152000),
+    (27, 3, 4, 190000),
+    (28, 4, 1, 345000),
+    (29, 5, 2, 94000),
+    (30, 1, 1, 123000),
+    (6, 3, 2, 175000),
+    (7, 4, 3, 350000),
+    (8, 5, 1, 92000),
+    (9, 1, 2, 118000),
+    (10, 2, 2, 149000),
+    (11, 3, 3, 172000),
+    (12, 4, 1, 365000),
+    (13, 5, 2, 93000),
+    (14, 1, 1, 121000),
+    (15, 2, 2, 148000),
+    (16, 3, 4, 185000),
+    (17, 4, 1, 335000),
+    (18, 5, 2, 91000),
+    (19, 1, 2, 119000),
+    (20, 2, 3, 151000),
+    (21, 3, 1, 180000),
+    (22, 4, 2, 348000),
+    (23, 5, 1, 89000),
+    (24, 1, 3, 112000),
+    (25, 2, 2, 147000),
+    (26, 3, 4, 176000),
+    (27, 4, 1, 355000),
+    (28, 5, 2, 95000),
+    (29, 1, 1, 126000),
+    (30, 2, 2, 153000);
+GO
+
 
 SELECT * FROM BookCategories;
 SELECT * FROM Books;
@@ -708,16 +797,16 @@ SELECT * FROM OrderDetails;
 
 
 
--- DELETE FROM OrderDetails;
--- DELETE FROM Orders;
--- DELETE FROM PurchaseDetails;
--- DELETE FROM Purchases;
--- DELETE FROM Suppliers;
--- DELETE FROM Accounts;
--- DELETE FROM Employees;
--- DELETE FROM Customers;
--- DELETE FROM Books;
--- DELETE FROM BookCategories;
+DELETE FROM OrderDetails;
+DELETE FROM Orders;
+DELETE FROM PurchaseDetails;
+DELETE FROM Purchases;
+DELETE FROM Suppliers;
+DELETE FROM Accounts;
+DELETE FROM Employees;
+DELETE FROM Customers;
+DELETE FROM Books;
+DELETE FROM BookCategories;
 
 
 DROP PROCEDURE IF EXISTS sp_GetPurchaseReport

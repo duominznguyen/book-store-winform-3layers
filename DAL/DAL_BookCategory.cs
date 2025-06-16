@@ -11,7 +11,7 @@ namespace DAL
     {
         public bool AddBookCategory(int categoryId, string categoryName)
         {
-            string query = $"INSERT INTO BookCategories (CategoryID, CategoryName) VALUES ({categoryId}, N'{categoryName}')";
+            string query = $"INSERT INTO BookCategories (CategoryName) VALUES (N'{categoryName}')";
             return ExecuteNonQuery(query) > 0;
         }
 

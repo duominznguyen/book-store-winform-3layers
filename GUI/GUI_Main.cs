@@ -41,17 +41,11 @@ namespace GUI
                 btn_TheLoaiSach.Visible = false;
                 ptb_TheLoaiSach.Visible = false;
 
-                btn_NhapHang.Visible = false;
-                ptb_NhapHang.Visible = false;
-
                 btn_NhanVien.Visible = false;
                 ptb_NhanVien.Visible = false;
 
                 btn_TaiKhoan.Visible = false;
                 ptb_TaiKhoan.Visible = false;
-
-                btn_NhaCC.Visible = false;
-                ptb_NhaCC.Visible = false;
 
                 btn_ThongKe.Visible = false;
                 ptb_ThongKe.Visible = false;
@@ -145,6 +139,7 @@ namespace GUI
             {
                 this.Hide();
                 GUI_LogIn loginForm = new GUI_LogIn();
+                loginForm.FormClosed += (s, args) => this.Close();
                 loginForm.Show();
             }
         }

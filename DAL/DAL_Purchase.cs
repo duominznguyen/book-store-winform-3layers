@@ -10,19 +10,6 @@ namespace DAL
 {
     public class DAL_Purchase : DbConnect
     {
-        //public DataTable GetAllPurchases()
-        //{
-        //    try
-        //    {
-        //        string query = "SELECT * FROM Purchases";
-        //        DataTable dataTable = ExecuteQuery(query);
-        //        return dataTable;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("Lỗi truy xuất cơ sở dữ liệu: " + ex.Message);
-        //    }
-        //}
 
         public DataTable GetAllPurchases()
         {
@@ -54,7 +41,7 @@ namespace DAL
         {
             try
             {
-                string query = $"INSERT INTO Purchases (PurchaseID, PurchaseDate, SupplierID, EmployeeID) VALUES ({purchase.PurchaseID}, '{purchase.PurchaseDate}', {purchase.SupplierID}, {purchase.EmployeeID})";
+                string query = $"INSERT INTO Purchases (PurchaseDate, SupplierID, EmployeeID) VALUES ('{purchase.PurchaseDate}', {purchase.SupplierID}, {purchase.EmployeeID})";
                 int rowsAffected = ExecuteNonQuery(query);
                 if (rowsAffected > 0)
                 {

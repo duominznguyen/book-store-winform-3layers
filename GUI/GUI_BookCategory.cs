@@ -268,5 +268,15 @@ namespace GUI
                 this.Close();
             }
         }
+
+        private void txt_CategoryID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Cho phép số, dấu chấm và phím điều khiển (như Backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Chặn ký tự không hợp lệ
+            }
+
+        }
     }
 }

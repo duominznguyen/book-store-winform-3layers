@@ -53,11 +53,6 @@ namespace BLL
 
         private Result IsLogicValidForAddingPurchase(Purchase purchase)
         {
-            if (_dalPurchase.GetPurchaseByID(purchase.PurchaseID).Rows.Count > 0)
-            {
-                return new Result(false, "Mã đơn hàng đã tồn tại");
-            }
-
             if (_dalSupplier.GetById(purchase.SupplierID).Rows.Count == 0)
             {
                 return new Result(false, "Mã nhà cung cấp không tồn tại");

@@ -105,7 +105,6 @@ namespace GUI
                 try
                 {
                     Book book = new Book();
-                    book.BookID = txt_Id.Text;
                     book.Title = txt_TieuDe.Text;           
                     book.Author = txt_TacGia.Text;
                     book.Publisher = txt_NhaXB.Text;
@@ -288,5 +287,20 @@ namespace GUI
                 this.Close();
             }
         }
+
+
+        private void txt_Gia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true; // Chặn ký tự không hợp lệ
+            }
+
+            if (e.KeyChar == '.' && (sender as TextBox).Text.Contains("."))
+            {
+                e.Handled = true;
+            }
+        }
+
     }
 }

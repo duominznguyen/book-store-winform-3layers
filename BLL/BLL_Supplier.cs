@@ -50,10 +50,6 @@ namespace BLL
 
         public bool IsLogicValidSupplierForAdding(Supplier supplier)
         {
-            if (_dalSupplier.GetById(supplier.SupplierId).Rows.Count > 0)
-            {
-                throw new Exception("Mã nhà cung cấp đã tồn tại");
-            }
             return true;
         }
 

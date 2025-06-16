@@ -54,13 +54,6 @@ namespace BLL
 
         private Result IsLogicValidForAddingCustomer(Customer customer)
         {
-            // logic to check if the customer can be added
-
-            // 1.Check if the customer ID already exists
-            if (_dalCustomer.GetCustomerById(customer.CustomerID).Rows.Count > 0)
-            {
-                return new Result(false, "Mã khách hàng đã tồn tại.");
-            }
             return new Result(true, "");
         }
         public Result AddCustomer(Customer customer)
