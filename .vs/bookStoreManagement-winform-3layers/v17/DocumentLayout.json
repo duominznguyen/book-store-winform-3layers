@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\gui\\gui_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC58654B-2B5F-4BCC-95FE-FF8A5A576301}|BLL\\BLL.csproj|E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\bll\\bll_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC58654B-2B5F-4BCC-95FE-FF8A5A576301}|BLL\\BLL.csproj|solutionrelative:bll\\bll_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\gui\\gui_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\gui\\gui_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\gui\\gui_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\gui\\gui_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\gui\\gui_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{52BA8750-5967-49F6-87E0-C39D0AA3BBAA}|GUI\\GUI.csproj|solutionrelative:gui\\gui_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC58654B-2B5F-4BCC-95FE-FF8A5A576301}|BLL\\BLL.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\bll\\bll_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC58654B-2B5F-4BCC-95FE-FF8A5A576301}|BLL\\BLL.csproj|E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\bll\\bll_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC58654B-2B5F-4BCC-95FE-FF8A5A576301}|BLL\\BLL.csproj|solutionrelative:bll\\bll_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\dal\\dal_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\dal\\dal_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|solutionrelative:dal\\dal_supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\dal\\dal_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\dal\\dal_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3491AECF-5CB3-4E44-98C8-BCE8EA7F78CE}|DAL\\DAL.csproj|solutionrelative:dal\\dal_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC58654B-2B5F-4BCC-95FE-FF8A5A576301}|BLL\\BLL.csproj|e:\\@study\\project1\\finalapp\\book-store-winform-3layers\\bll\\bll_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC58654B-2B5F-4BCC-95FE-FF8A5A576301}|BLL\\BLL.csproj|solutionrelative:bll\\bll_purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,101 +75,76 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GUI_LogIn.cs",
-              "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_LogIn.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_LogIn.cs",
-              "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_LogIn.cs",
-              "RelativeToolTip": "GUI\\GUI_LogIn.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAqwCkAAAAPAAAAAAAAAA==",
+              "Title": "GUI_Purchase.cs",
+              "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_Purchase.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_Purchase.cs",
+              "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_Purchase.cs",
+              "RelativeToolTip": "GUI\\GUI_Purchase.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAIwI8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T08:44:17.207Z",
+              "WhenOpened": "2025-06-17T02:39:40.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GUI_LogIn.cs [Design]",
-              "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_LogIn.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_LogIn.cs",
-              "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_LogIn.cs [Design]",
-              "RelativeToolTip": "GUI\\GUI_LogIn.cs [Design]",
+              "Title": "GUI_Purchase.cs [Design]",
+              "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_Purchase.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_Purchase.cs",
+              "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_Purchase.cs [Design]",
+              "RelativeToolTip": "GUI\\GUI_Purchase.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T08:44:15.377Z",
+              "WhenOpened": "2025-06-17T02:39:38.467Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GUI_Main.cs",
-              "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_Main.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_Main.cs",
-              "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_Main.cs",
-              "RelativeToolTip": "GUI\\GUI_Main.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAA/wJMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T08:38:59.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GUI_Main.cs [Design]",
-              "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_Main.cs",
-              "RelativeDocumentMoniker": "GUI\\GUI_Main.cs",
-              "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\GUI\\GUI_Main.cs [Design]",
-              "RelativeToolTip": "GUI\\GUI_Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:02:51.22Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "DAL_Supplier.cs",
               "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\DAL\\DAL_Supplier.cs",
               "RelativeDocumentMoniker": "DAL\\DAL_Supplier.cs",
               "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\DAL\\DAL_Supplier.cs",
               "RelativeToolTip": "DAL\\DAL_Supplier.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T08:36:11.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "BLL_Supplier.cs",
               "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\BLL\\BLL_Supplier.cs",
               "RelativeDocumentMoniker": "BLL\\BLL_Supplier.cs",
               "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\BLL\\BLL_Supplier.cs",
               "RelativeToolTip": "BLL\\BLL_Supplier.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAADwvzQAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T08:36:09.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "BLL_Purchase.cs",
               "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\BLL\\BLL_Purchase.cs",
               "RelativeDocumentMoniker": "BLL\\BLL_Purchase.cs",
               "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\BLL\\BLL_Purchase.cs",
               "RelativeToolTip": "BLL\\BLL_Purchase.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwDYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAawEQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T08:35:07.193Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "DAL_Purchase.cs",
               "DocumentMoniker": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\DAL\\DAL_Purchase.cs",
               "RelativeDocumentMoniker": "DAL\\DAL_Purchase.cs",
               "ToolTip": "E:\\@Study\\Project1\\FinalApp\\book-store-winform-3layers\\DAL\\DAL_Purchase.cs",
               "RelativeToolTip": "DAL\\DAL_Purchase.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwC8AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDMAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T08:35:04.425Z",
               "EditorCaption": ""

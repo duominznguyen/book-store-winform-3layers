@@ -153,10 +153,9 @@ namespace GUI
                     if (_bllOrder.AddOrder(order))
                     {
                         MessageBox.Show("Thêm đơn bán thành công.");
-                        LoadDGV();
-
-                        GUI_OrderDetail gUI_OrderDetail = new GUI_OrderDetail(order.OrderID);
-                        gUI_OrderDetail.ShowDialog();
+                        //LoadDGV();
+                        //GUI_OrderDetail gUI_OrderDetail = new GUI_OrderDetail(order.OrderID);
+                        //gUI_OrderDetail.ShowDialog();
                     }
                     else
                     {

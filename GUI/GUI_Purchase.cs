@@ -104,14 +104,6 @@ namespace GUI
 
         private Result IsFormatValidForAddingPurchase()
         {
-            if (string.IsNullOrEmpty(txt_PurchaseID.Text))
-            {
-                return new Result(false, "Mã đơn hàng không được để trống");
-            }
-            if (int.TryParse(txt_PurchaseID.Text, out int purchaseId) == false)
-            {
-                return new Result(false, "Mã đơn hàng phải là số nguyên không dấu");
-            }
 
             if (string.IsNullOrEmpty(txt_SupplierID.Text))
             {
@@ -144,7 +136,7 @@ namespace GUI
                 if (validationResult.IsSuccess)
                 {
                     Purchase purchase = new Purchase(
-                        int.Parse(txt_PurchaseID.Text),
+                        0,
                         dtp_PurchaseDate.Value,
                         int.Parse(txt_SupplierID.Text),
                         int.Parse(txt_EmployeeID.Text)
